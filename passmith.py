@@ -23,9 +23,8 @@ def dictToFile(dictionary, name):
             dFile.write(word + '\n')
     return name
 
-def addSpice(dictionary):
-    """Add '1', '123', '321' to the start and end of each password."""
-    extensions = ["1", "123", "321"]
+def addSpice(dictionary,extensions):
+    """Add externsions to the start and end of each password."""
     new_words = set()
     
     for word in dictionary:
@@ -84,7 +83,8 @@ def main():
         info.append(fixString(a))
 
     dictionary = createDict(info)  # Create dictionary from information
-    addSpice(dictionary)  # Add '1', '123', '321' modifications
+    extensions = ["1", "123", "321"]
+    addSpice(dictionary,extensions)  # Add '1', '123', '321' modifications
     dictToFile(dictionary, file_name)  # Save to file
 
     print(f"Dictionary file '{file_name}' is ready.")
