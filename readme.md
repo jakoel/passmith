@@ -11,9 +11,10 @@ PassSmith Tool is a Python script designed to generate custom wordlists for secu
 - Saves the generated wordlist to a text file
 
 ## Usage
-1. Run `python passmith.py`
-2. Enter requested personal information when prompted
-3. The wordlist will be saved as `[First_Name]_words_list.txt`
+1. Edit 'extensions' list with your favorite prefixes and postfixes
+2. Run `python passmith.py`
+3. Enter requested personal information when prompted
+4. The wordlist will be saved as `[First_Name]_words_list.txt`
 
 ## Important Notes
 - This tool is intended for ethical security testing and password strength assessment only.
