@@ -83,8 +83,10 @@ def main():
         info.append(fixString(a))
 
     dictionary = createDict(info)  # Create dictionary from information
-    extensions = ["1", "123", "321"]
-    addSpice(dictionary,extensions)  # Add '1', '123', '321' modifications
+    
+    extensions = ["1", "123", "321", "!", "?"] # Add other prefixes and postfixes here
+    
+    addSpice(dictionary,extensions)  # Add prefixes and postfixes using extensions list 
     dictToFile(dictionary, file_name)  # Save to file
 
     print(f"Dictionary file '{file_name}' is ready.")
